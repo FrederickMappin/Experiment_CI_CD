@@ -27,10 +27,12 @@ from calculator.multiplication import multiply as multiply_func
 from calculator.division import divide as divide_func
 from calculator.negate import negate as negate_func
 
+
 @click.group()
 def cli():
     """Simple Calculator CLI"""
     pass
+
 
 @cli.command()
 @click.argument('a', type=float)
@@ -42,6 +44,7 @@ def add(a, b):
     click.echo(f"{a} + {b} = {result}")
     click.echo(f"Negated result: {negated}")
 
+
 @cli.command()
 @click.argument('a', type=float)
 @click.argument('b', type=float)
@@ -52,6 +55,7 @@ def subtract(a, b):
     click.echo(f"{a} - {b} = {result}")
     click.echo(f"Negated result: {negated}")
 
+
 @cli.command()
 @click.argument('a', type=float)
 @click.argument('b', type=float)
@@ -61,6 +65,7 @@ def multiply(a, b):
     negated = negate_func(result)
     click.echo(f"{a} * {b} = {result}")
     click.echo(f"Negated result: {negated}")
+
 
 @cli.command()
 @click.argument('a', type=float)
@@ -82,6 +87,7 @@ def negate(value):
     """Print the negative of the input value."""
     result = negate_func(value)
     click.echo(f"Negate({value}) = {result}")
+
 
 if __name__ == '__main__':
     cli()
