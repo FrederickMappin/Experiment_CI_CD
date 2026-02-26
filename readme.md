@@ -1,7 +1,7 @@
 ## CI/CD 
 
 
-Like I bad Unit Test, Lets keep improving.
+Like a bad Unit Test, Lets keep improving.
 
 This is a learning notebook. Where the goal is to practice different set-ups for CI/CD to gain a deeper Mastery.
 
