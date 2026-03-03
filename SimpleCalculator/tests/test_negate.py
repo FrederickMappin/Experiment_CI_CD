@@ -1,4 +1,4 @@
-
+# Test cases for the negate function in the calculator.negate module.
 from calculator.negate import negate
 
 

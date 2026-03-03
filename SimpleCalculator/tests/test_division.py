@@ -1,4 +1,4 @@
-
+# This is a test file for the divide function in the Simple Calculator application.
 from calculator.division import divide
 
 

@@ -1,4 +1,4 @@
-
+# This is a test file for the multiply function in the Simple Calculator application.
 from calculator.multiplication import multiply
 
 

@@ -1,4 +1,4 @@
-
+# This is an integration test for the Simple Calculator application.
 from calculator.add import add
 from calculator.sub import sub
 from calculator.multiplication import multiply
