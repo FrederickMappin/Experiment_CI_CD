@@ -1,4 +1,4 @@
-
+# This is a simple smoke test for the Simple Calculator application.
 import subprocess
 import sys
 

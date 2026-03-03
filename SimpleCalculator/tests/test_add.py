@@ -1,4 +1,4 @@
-
+# This is a test file for the add function in the Simple Calculator application.
 from calculator.add import add
 
 

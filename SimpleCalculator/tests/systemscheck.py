@@ -1,4 +1,4 @@
-
+# This is a system check for the Simple Calculator application.
 import subprocess
 import sys
 
