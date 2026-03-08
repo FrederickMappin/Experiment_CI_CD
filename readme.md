@@ -1,3 +1,27 @@
+## 3. Build and Push Docker Image to Amazon ECR
+
+Workflow file: `.github/workflows/ecr-docker.yaml`
+
+This workflow:
+
+1. Runs on push to the `Dockerfile`.
+2. Checks out your repository code.
+3. Configures AWS credentials using repository secrets.
+4. Logs into Amazon ECR.
+5. Builds the Docker image from the root `Dockerfile`.
+6. Tags the image for your ECR repository.
+7. Pushes the image to your ECR registry.
+
+Required repository secrets:
+ - `AWS_ACCESS_KEY_ID`
+ - `AWS_SECRET_ACCESS_KEY`
+ - `AWS_REGION`
+ - `ECR_REPOSITORY` (your ECR repository name)
+
+Example published image URI:
+`<AWS_ACCOUNT_ID>.dkr.ecr.<AWS_REGION>.amazonaws.com/<ECR_REPOSITORY>:latest`
+
+This automates deployment of your Docker image to AWS ECR for use in cloud environments.
 ## Learning GitHub Actions
 
 This repository is a hands-on practice project for learning how GitHub Actions automates code quality checks in a Python codebase.
